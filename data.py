@@ -5,7 +5,7 @@ print("The computer will take sub and marks for that sub as a input from you...T
 
 while(True):                                                                                       #adding contents in dict-data
     user = input("Sub: ")
-    if(user == "stop"):
+    if(user.lower() == "stop"):
         break
     value = int(input("marks: "))
     data.update({user : value})
