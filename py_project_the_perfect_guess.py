@@ -1,11 +1,11 @@
 import random
 
-cno = random.randint(1, 100)
+cno = random.randint(1, 100)                                                         #generating random no between 1-100
 
 uno = -1
 guesses = 1
 
-while(uno != cno):
+while(uno != cno):                                                                  #process
     uno = int(input("enter your guess between 1 to 100: "))
     if (uno > cno):
         print("smaller no please")
@@ -13,4 +13,4 @@ while(uno != cno):
     elif (cno > uno):
         print("larger no please")
         guesses +=1
-print(f"you have successfuly guessed the no {cno} in {guesses} attempt")    
+print(f"you have successfuly guessed the no {cno} in {guesses} attempt")            #conclusion after exit from loop
