@@ -25,7 +25,7 @@ not_costly = {
     "Pan": random.randint(300, 2000),
     "Plate": random.randint(50, 500),
     "Glass": random.randint(50, 500),
-    "Cup": random.randint(50, 500),
+    "Cup": random.randint(50, 500),                                #default products with price range
     "Spoon": random.randint(10, 200),
     "Fork": random.randint(10, 200),
     "Knife": random.randint(100, 1000),
@@ -54,7 +54,7 @@ costly = {
 
 
 rounds = int(input("How many rounds do you want: "))
-players = int(input("How many player(s) are playing?: "))
+players = int(input("How many player(s) are playing?: "))                                                                    #user's choice
 result = {}
 
 
@@ -67,7 +67,7 @@ def guess_price(hmr, hmp):
             klist = list(e.keys())
             product = random.choice(klist)
             if(product in list(not_costly.keys())):
-                print("Product comes in \'not expensive\' category.")
+                print("Product comes in \'not expensive\' category.")                                                       #defining game(for multiplayer)
             else:
                 print("Product comes in \'expensive\' category.")
             print(f"Product is: {product}")
@@ -78,7 +78,7 @@ def guess_price(hmr, hmp):
             print("Different between actual price and guessed price is:", difference)
             a += difference
         result.update({f"player{p+1}": a})
-    print("Remember who played first? Here is the score of all players:", result, "\nThe one with lowest difference wins!")
+    print("Remember who played first? Here is the score of all players:", result, "\nThe one with lowest difference wins!")    #results
 
 
 
@@ -90,14 +90,14 @@ if (players == 1):
     dict1 = {}
     for t in range(rounds):
         e = random.choice([costly, not_costly])
-        klist = list(e.keys())
+        klist = list(e.keys())                                                
         product = random.choice(klist)
         ap = e[product]
         if(product in list(not_costly.keys())):
             print("Product comes in \'not expensive\' category.")
         else:
             print("Product comes in \'expensive\' category.")
-        print("Product:", product)
+        print("Product:", product)                                                                                              #defining game for single player 
 
         ug = int(input("Enter your guess: "))
         if(product in list(not_costly.keys())):
@@ -112,7 +112,7 @@ if (players == 1):
         print("Actual price:", ap)
     print("The one with lowest difference wins!")
     dict1.update({"Computer": csc})
-    dict1.update({"User": usc})
+    dict1.update({"User": usc})                                                                                                   #results
 
 
     print("Score:", dict1)
