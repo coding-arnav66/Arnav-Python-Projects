@@ -77,6 +77,7 @@ def guess_price(hmr, hmp):
             difference = abs(ap - gp)
             print("Different between actual price and guessed price is:", difference)
             a += difference
+            e.pop(product)                                                                                                     #avoiding repititions
         result.update({f"player{p+1}": a})
     print("Remember who played first? Here is the score of all players:", result, "\nThe one with lowest difference wins!")    #results
 
@@ -110,6 +111,7 @@ if (players == 1):
         udif = abs(ug - ap)
         usc += udif
         print("Actual price:", ap)
+        e.pop(product)                                                                                                           #avoiding repetitions
     print("The one with lowest difference wins!")
     dict1.update({"Computer": csc})
     dict1.update({"User": usc})                                                                                                   #results
