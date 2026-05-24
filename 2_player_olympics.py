@@ -22,8 +22,11 @@ points = {"p1" : 0,
     "p2" : 0
 }
 
-
-
+systemm = input("You are on mac/linux(code = a) or windows(code = b)?: ")
+if(systemm == "b"):
+    q = 'cls'
+elif(systemm == "a"):
+    q = 'clear'
 
 
 
@@ -49,7 +52,7 @@ def keygame():
         time.sleep(1)
         start = time.time()
         user = input(f"Time starts!\nThe character: {char}...::::")
-        end = time.time()
+        end = time.time()                                                        # game 1 logic
         if(user == char):
             res = "correct"
         else:
@@ -86,7 +89,7 @@ def dice():
             score += d
             amt += 1
         print("Your dice reached 30!")
-        if(amt > 10):
+        if(amt > 10):                                                                   # game 2 logic
             points[f"p{i+1}"] += 2
         if(amt <= 10 and amt > 8):
             points[f"p{i+1}"] += 8
@@ -117,7 +120,7 @@ def mat():
         end1 = time.time()
         if(user == a+b):
             x = "correct"
-            print("Answer is correct!")
+            print("Answer is correct!")                                                 #game 3 logic
         else:
             x = "incorrect"
             print("Answer is incorrect!")
@@ -181,8 +184,8 @@ def memory():
         print("1...")
         time.sleep(1)
         print(f"Remember {num}")
-        time.sleep(12)
-        os.system('cls')
+        time.sleep(12)                                                                     # game 4 logic
+        os.system(q)
         ans = int(input("Enter no: "))
         if(ans == num):
             print("Its correct! Congrats!")
@@ -201,10 +204,10 @@ def typeing():
         time.sleep(4)
         print(f"Remember the sentence:", sentence)
         time.sleep(7)
-        os.system('cls')
+        os.system(q)
         print("After 3 seconds, type it as fast as u can...")
         time.sleep(4)
-        start = time.time()
+        start = time.time()                                                                    #game 5 logic
         user = input("Type it: ")
         end = time.time()
         timee = round(end - start, 2)
@@ -222,34 +225,34 @@ print("Welcome to 2-player olympics!")
 print("You will play games like-\nKeyboard reaction time challange.\nDice race.\nMath race.\nMemory game.\nSpeed typing.")
 print("Be ready with your opponent.")
 masti = input("Type anything to start the olympics: ")
-os.system('cls')
+os.system(q)
 print("Game 1: Computer will show you random character from keyboard.\nWhoever types it correct and presses enter in shortest time, wins!\nStarting in 5 seconds... ")
 time.sleep(5)
 keygame()
 time.sleep(2)
-os.system('cls')
+os.system(q)
 print("Game 2: Roll the dice and reach 30 in shortest number of chance...")
 dice()
 time.sleep(2)
-os.system('cls')
+os.system(q)
 print("Game 3: Solve the math equations in shortest period of time...")
 mat()
-time.sleep(2)
-os.system('cls')
+time.sleep(2)                                                                                            #playing games
+os.system(q)
 print("Game 4: Remember the 9-digit no and type it in the shortest period of time...")
 memory()
 time.sleep(2)
-os.system('cls')
+os.system(q)
 print("The last game: Type the given sentence in the shortest period of time...")
 typeing()
 time.sleep(2)
-os.system('cls')
+os.system(q)
 
 print("Note that distribution of points is very logical. Here is the points table of player 1 and player 2:\n", points)
 if(points['p1'] > points['p2']):
     print("Player 1 won the game!")
 else:
-    print("Player 2 won the game!")
+    print("Player 2 won the game!")                                                                      #results
 
 
 
