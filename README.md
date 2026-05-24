@@ -15,6 +15,7 @@ Each project is small, easy to run, and designed to teach programming concepts w
 - **data.py** → Get your stats after exam📚ℹ️📃
 - **auctions.py** → Play football auction against computer with results⚽🥅
 - **guess_the_price.py** → Guess the price of everyday and costly items — closest guess wins!🎮💰💵
+- **2_player_olympics.py** → Play games with your friend to win with more points🎮⚡🪙
 
 ---
 
