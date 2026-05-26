@@ -16,11 +16,13 @@ Each project is small, easy to run, and designed to teach programming concepts w
 - **auctions.py** → Play football auction against computer with results⚽🥅
 - **guess_the_price.py** → Guess the price of everyday and costly items — closest guess wins!🎮💰💵
 - **2_player_olympics.py** → Play games with your friend to win with more points🎮⚡🪙
+- **cheater_chatbox.py** → Talk with ai with high efficiency📢🤖⚡
 
 ---
 
 ## 🚀 How to Run
-1. Clone this repository:
+1. Install the packages.
+2. Clone this repository:
    ```bash
    git clone https://github.com/coder-arnav66/Arnav-Python-Projects.git
 
