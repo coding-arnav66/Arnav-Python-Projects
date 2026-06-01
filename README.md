@@ -40,21 +40,3 @@ pip install -r requirements.txt
 
 
 (Note: If your environment uses pip3, run pip3 install -r requirements.txt instead.)
-### 🏃‍♂️ How to Run
-You can run either of the utility scripts directly from your terminal:
-#### *Option A: Indecision Buster (clear_your_confusion.py)*
-This script takes multiple custom inputs and randomly selects one to help resolve dilemmas.
-bash
-python clear_your_confusion.py
-
-
- * *Usage:* Follow the on-screen text prompts to input your choices, and let the script make the final decision.
-#### *Option B: Personal Chatbot (cheater_chatbox.py)*
-This script launches an interactive conversational tool directly in your terminal.
-bash
-python cheater_chatbox.py
-
-
- * *Usage:* Type your queries into the terminal prompt to interact with the chatbot in real time.
-
-
