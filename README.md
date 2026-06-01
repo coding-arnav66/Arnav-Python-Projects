@@ -17,6 +17,7 @@ Each project is small, easy to run, and designed to learn programming concepts w
 - **guess_the_price.py** → Guess the price of everyday and costly items — closest guess wins!🎮💰💵
 - **2_player_olympics.py** → Play games with your friend to win with more points🎮⚡🪙
 - **cheater_chatbox.py** → Talk with ai with high efficiency📢🤖⚡
+- **talking_thing.py** → Play convo related games with different modes🗣️💬⚡
 
 ---
 
