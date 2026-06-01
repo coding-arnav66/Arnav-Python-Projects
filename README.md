@@ -40,3 +40,18 @@ pip install -r requirements.txt
 
 
 (Note: If your environment uses pip3, run pip3 install -r requirements.txt instead.)
+
+:
+
+### 🎮 Running the Code
+To run any of the games or tools, use the python command followed by the filename. For example:
+
+Bash
+python talking_thing.py
+
+Or if you want to play the cricket game:
+
+Bash
+python hand_cricket.py
+
+(Note: If you are on a Mac or Linux computer, you might need to use python3 instead of python)
