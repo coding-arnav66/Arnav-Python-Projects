@@ -24,18 +24,18 @@ Each project is small, easy to run, and designed to learn programming concepts w
 ## 🚀 How to Run
 ### Prerequisites
 Ensure you have *Python 3.x* installed. You can check your version by running:
-bash
+bash:
 python --version
 
 
 ### 📦 Installation
  1. Clone or download this repository and navigate to the project directory:
-bash
+bash:
 cd path/to/your/repository-folder
 
 
  2. Install any required dependencies:
-bash
+bash:
 pip install -r requirements.txt
 
 
@@ -46,12 +46,12 @@ pip install -r requirements.txt
 ### 🎮 Running the Code
 To run any of the games or tools, use the python command followed by the filename. For example:
 
-Bash
+Bash:
 python talking_thing.py
 
 Or if you want to play the cricket game:
 
-Bash
+Bash:
 python hand_cricket.py
 
 (Note: If you are on a Mac or Linux computer, you might need to use python3 instead of python)
