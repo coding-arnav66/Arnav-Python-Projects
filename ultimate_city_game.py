@@ -1,7 +1,7 @@
 import random, os, time, keyboard
 print("Welcome to the city created by Saket.!")
 print("You have 50 coins in default...")
-print("Just follow the letter codes given after every option to select the option :)")
+print("Just follow the letter codes given after every option to select the option :)")         #intro
 ddict = {"n": "north", "s": "south", "e": "east", "w": "west"}
 coins = 50
 qa_dict = {
@@ -10,7 +10,7 @@ qa_dict = {
     "Code to subtract b from a and store it in result": "result=a-b",
     "Code to divide m by n and store it in div": "div=m/n",
     "Code to find remainder of a divided by b and store it in r": f"r=a%b",
-    "Code to raise x to power y and store it in ans": "ans=x**y",
+    "Code to raise x to power y and store it in ans": "ans=x**y",                            #dict for occupation coder
     "Code to store length of list l in n": "n=len(l)",
     "Code to append 10 to list l": "l.append(10)",
     "Code to sort list l": "l.sort()",
@@ -37,7 +37,7 @@ recipes = {
         "Chili Potato": "Potato finger chips fried, Honey or Sugar, Chili sauce, Sesame seeds, Garlic minced, Soy sauce",
     
     
-        "Hakka Noodles": "Noodles boiled, Onion sliced, Capsicum sliced, Soy sauce, Green chili sauce, Garlic minced",
+        "Hakka Noodles": "Noodles boiled, Onion sliced, Capsicum sliced, Soy sauce, Green chili sauce, Garlic minced",       #dict for occupation chef
     
     
         "Schezwan Rice": "Cooked rice, Schezwan sauce, Mixed veggies chopped, Garlic minced, Oil, Spring onion",
@@ -66,7 +66,7 @@ def monster():
     e = random.choice(["YOU WON!", "MONSTER WON!", "YOU WON!"])
     for i in range(random.randint(4, 14)):
         print("You won!")
-        time.sleep(1)
+        time.sleep(1)                                                         #monster game
         print("Monster won!")
         time.sleep(1)
     print(e)
@@ -82,7 +82,7 @@ def mining(tool, price, sf, nothingp):
         if price>coins:
             print(f"You took a loan of {price - coins} coins.")
         coins -= price
-        print(f"You bought {sf} for {price} coins. You now have {coins} coins.")
+        print(f"You bought {sf} for {price} coins. You now have {coins} coins.")                           #mining
         ug = ["nothing"] * nothingp + ["diamond"]
         while True:
             userr = input("Press '7' to mine, or 'enter' to stop(5 coins will be deducted for each mine attemps...): ")
@@ -103,7 +103,7 @@ while True:
     if user not in ddict:
         print("Invalid choice! Please type n, e, w, or s.")
         continue
-    print(f"Welcome to {ddict[user]}")
+    print(f"Welcome to {ddict[user]}")                                                          #message that tells about the location in which the user is...
     print(f"You {random.choice(['fell', 'jumped', 'walked'])} and saw a old {random.choice(['school', 'office', 'house', 'hospital', 'society', 'garden', 'hall'])} and decided to explore that...")
     a = random.choice(["Monster", "No monster", "No monster"])
     print(f"While exploring, you saw {a}")
@@ -112,7 +112,7 @@ while True:
         if choice == "nf":
             print("Error 404, guts not found...")
             coins -= 10
-            print(f"You lost 10 coins. You now have {coins} coins.")
+            print(f"You lost 10 coins. You now have {coins} coins.")                          #choice to fight with monster
         elif choice == "f":
             monster()
     else: 
@@ -127,11 +127,11 @@ while True:
     print("Now you see many types of occupation there...\nFarmer - f\nMiner - m\nCoder - c\nBusinessman - b\nHunter - h\nChef - ch")
     occ = input("Enter your choice: ")
     if "f" in occ:
-        if(random.choice([True, False])):
+        if(random.choice([True, False])):                                                            #chosing occupation by selecting a letter code
             time.sleep(3)
             print("You are now hungry! 10 coins to be deducted for food...")
             coins -= 10
-        print("Welcome to farming!")
+        print("Welcome to farming!")                                                                         #logic for farmer
         seeds = int(input(f"You have {coins} coins. How many seeds do you want to buy? Cost of each is 10 coins: "))
         if (10*seeds)>coins:
             print(f"You took loan of {(10*seeds)-coins}...")
@@ -151,7 +151,7 @@ while True:
             else:
                 print("Crop failed! You earned nothing. You still have", coins, "coins.")
     elif "m" in occ:
-        if(random.choice([True, False])):
+        if(random.choice([True, False])):                                                             #logic for miner
             time.sleep(3)
             print("You are now hungry! 10 coins to be deducted for food...")
             coins -= 10
@@ -189,7 +189,7 @@ while True:
             print("You are now hungry! 10 coins to be deducted for food...")
             coins -= 10
         print("Welcome businessman!")
-        print("Invest your coins and have a equal chance to duble it or loose it...")
+        print("Invest your coins and have a equal chance to duble it or loose it...")                               #logic for businessman
         while True:
             uc = input(f"You have {coins} coins. How many coins do you want to invest? Enter amount or press \'stop\' to stop: ")
             if "stop" in uc:
@@ -212,7 +212,7 @@ while True:
             time.sleep(3)
             print("You are now hungry! 10 coins to be deducted for food...")
             coins -= 10
-        print("Welcome to hunting...")
+        print("Welcome to hunting...")                                                                       #logic for hunter
         coins -= 50
         print(f"The cost of gun is 50 coins which has been deducted...Now, you have {coins} coins.")
         print("A random no of seconds will be given to you and you have to press \'h\' and \'enter\' after that period of time...")
@@ -241,7 +241,7 @@ while True:
             time.sleep(3)
             print("You are now hungry! 10 coins to be deducted for food...")
             coins -= 10
-        print("Welcome in cooking!")
+        print("Welcome in cooking!")                                                                       #logic for chef
         roundss = int(input(f"You have {coins} coins. How many rounds do you want? 60 coins will be deducted for each: "))
         coins -= 60*roundss
         print("A dish will be shown, You have to type any three ingridients one by one... ")
@@ -268,7 +268,7 @@ while True:
                 print("You are now hungry! 10 coins to be deducted for food...")
                 coins -= 10
                 
-            print("Welcome to Saket City General Hospital: Emergency Department")
+            print("Welcome to Saket City General Hospital: Emergency Department")                                         #logic for doctor
             print("You are clocking in as the Chief Attending Physician. Lives are on the line.")
             
             rounds = int(input(f"You have {coins} coins. How many critical patients can you handle this shift?: "))
@@ -399,12 +399,12 @@ while True:
                     coins -= (coins - 20)
                     
             print(f"\nYour shift has ended. You now have {coins} coins.")
-    print("To leave game - l; continue - c")
+    print("To leave game - l; continue - c")                                   #cinfirming if user wants to leave
     userrr = input(":::")
     if "l" in userrr:
         break
 namee = input("Enter your name: ")
-print("Generating certificate...")
+print("Generating certificate...")                                             #generating a thank you certificate as well as certificate for appreciation
 time.sleep(5)
 from fpdf import FPDF
 import qrcode
@@ -435,7 +435,7 @@ pdf.multi_cell(0, 10,
     "for successfully completing the City Game challenge "
     f"with dedication and enthusiasm, collecting {coins} coins in total!!!"
 )
-pdf.image("qr.png", x=80, y=150, w=50, h=50) 
+pdf.image("qr.png", x=80, y=150, w=50, h=50)                                                         #including qr code for authentication
 # Footer
 pdf.set_font("Arial", 'I', 10)
 pdf.cell(0, 10, "Signed by: MR. A Saket", ln=True, align="R")
@@ -443,7 +443,7 @@ pdf.set_font("Arial", 'I', 10)
 pdf.cell(0, 10, "Here is your QR code:", ln=True, align="C")
 
 # Save PDF
-pdf.output(f"certificate_for_{namee}.pdf")
+pdf.output(f"certificate_for_{namee}.pdf")                                                        #saving the pdf
 
 print("Certificate generated...! It is saved in the same folder...")
 
