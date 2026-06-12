@@ -64,4 +64,4 @@ python hand_cricket.py
 ---
 ## 📺 Project Demo Video
 
-[▶️ Click here to watch the Project Demo Video](project1.mp4)
+(https://github.com/user-attachments/assets/478efde1-88e6-44a2-9fb0-9b9be6d9bf10)
