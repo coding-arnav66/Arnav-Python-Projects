@@ -5,7 +5,7 @@
 Welcome to **Arnav-Python-Projects** — a collection of fun and beginner-friendly Python scripts created by me, Arnav Saket.  
 Each project is small, easy to run, and designed to learn programming concepts while being enjoyable to use.
 
----
+---<video src="project1.mp4" width="100%" controls></video>
 
 ## 📂 Projects Included
 - **hand_cricket.py** → Play hand cricket against the computer 🏏
