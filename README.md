@@ -59,3 +59,4 @@ Bash:
 python hand_cricket.py
 
 (Note: If you are on a Mac or Linux computer, you might need to use python3 instead of python)
+<video src="project1.mp4" width="100%%" controls></video>  
