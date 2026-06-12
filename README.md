@@ -5,7 +5,7 @@
 Welcome to **Arnav-Python-Projects** — a collection of fun and beginner-friendly Python scripts created by me, Arnav Saket.  
 Each project is small, easy to run, and designed to learn programming concepts while being enjoyable to use.
 
----echo ^<video src="project1.mp4" width="100%%" controls^>^</video^> >> README.md && git add README.md && git commit -m "Add video player to README" && git push origin main
+---<video src="project1.mp4" width="100%" controls></video>
 
 ## 📂 Projects Included
 - **hand_cricket.py** → Play hand cricket against the computer 🏏
