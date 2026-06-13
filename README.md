@@ -40,7 +40,7 @@ Each project is small, easy to run, and designed to learn programming concepts w
 
 ### - **clear_your_confusion.py** → A helper script for clarifying concepts 📘:
 #### Boon: Chooses a random option for you whenever you are stuck
-#### Bane: Doesn't knows that what is the mood of user.
+#### Bane: The code cant know that what is the mood of user.
 
 ### - **data.py** → Get your stats after exam 📚ℹ️📃:
 #### Boon: Automatically calculates grade trends, totals, and averages from your exam scores, saving you from doing slow manual math.
