@@ -1,11 +1,11 @@
 import random, os
-name = input("What is your name?: ")
+name = input("What is your name?: ")                                                 #asking for name to store data in a personal txt file
 def game_before_learning():
     f = open(f"{name}'s_data.txt", "a")
     for i in range(10):
         while True:
             comp = random.choice(["1", "2" ,"3"])
-            youstr = input("enter your choice(stone/paper/scissor): ")
+            youstr = input("enter your choice(stone/paper/scissor): ")             #if its a new user, this is the game which will note the moves in the txt file in form of 1, 2 and 3
             youdict = {
                         "stone" : "1",
                     "paper" : "2",
@@ -31,37 +31,37 @@ def game_before_learning():
                         print("computer chose scissor\nyou win")
                     elif(comp =="3" and you == "2"):
                         print("computer chose scissor\nyou lose")
-                f.write(you)
+                f.write(you)                                                    #writing the move in the file
                 break
     f.close()
 def game_after_learning():
-    with open(f"{name}'s_data.txt") as r:
+    with open(f"{name}'s_data.txt") as r:                                       #if its a old user, or new user has completed the first part, this will take place next 
         data = r.read()
     data_for_learning = list(data)
-    pattern = {
+    pattern = {                                                                 #noting the pattern so that after a move, which move is played more frequently can be noted down
         "1" : {"1" : 0, "2" : 0, "3" : 0},
         "2" : {"1" : 0, "2" : 0, "3" : 0},
         "3" : {"1" : 0, "2" : 0, "3" : 0}
     }
-    win = {
+    win = {                                                                     #dict to know that which move is used to defeat which move
         "1" : "2",
         "2" : "3",
         "3" : "1"
     }
     q = open(f"{name}'s_data.txt", "a")
-    while True:
+    while True:                                                                #to update 'pattern(dict)' according to user's data
         for a in range(len(data_for_learning)-1):
             current_move = data_for_learning[a]
             next_move = data_for_learning[a+1]
             pattern[current_move][next_move] += 1
         youstr = input("enter your choice(stone/paper/scissor): ")
-        prediction = {
+        prediction = {                                                          #prediction based on 'pattern(dict)' using max and get func
         "1" : max(pattern["1"], key=pattern["1"].get),
         "2" : max(pattern["2"], key=pattern["2"].get),
         "3" : max(pattern["3"], key=pattern["3"].get)
         }
-        last_move = data_for_learning[-1]
-        comp = win[prediction[last_move]]
+        last_move = data_for_learning[-1]                                       #to see what user has played latest and predict the next move's defeating move
+        comp = win[prediction[last_move]]                                       #computer's prediction(made before user enters the input)
         youdict = {
                 "stone" : "1",
                 "paper" : "2",
@@ -89,10 +89,10 @@ def game_after_learning():
                     print("computer chose scissor\nyou win")
                 elif(comp =="3" and you == "2"):
                     print("computer chose scissor\nyou lose")
-if os.path.exists(f"{name}'s_data.txt"):
+if os.path.exists(f"{name}'s_data.txt"):                                   #if old user, directly start game after learning
     print(f"Welcome back {name}, Your past data imported!")
     game_after_learning()
-else:
+else:                                                                      #else, execute both game which were before learning and after learning
     print(f"Welcome {name}!")
     game_before_learning()
     game_after_learning()
