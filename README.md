@@ -78,6 +78,10 @@ Each project is small, easy to run, and designed to learn programming concepts w
 #### Boon: Uses Markov-chain style prediction to predict the next move and keeps learning on every move.
 #### Bane: If user tries to randomise his/her moves by not following a particular pattern, the advantage of computer can disappear.
 
+### - **gdp_scraper.py** → Uses concept of scraping to extract data from wikipedia and shows it in terminal🌍💰📊📈📝 
+#### Boon: Automates extraction of GDP data directly from Wikipedia, saving time and effort.
+#### Bane: Breaks easily if the table structure or source page changes.
+
 ---
 
 ## 🚀 How to Run
