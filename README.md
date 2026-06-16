@@ -74,6 +74,10 @@ Each project is small, easy to run, and designed to learn programming concepts w
 #### Boon: A full-scale text RPG simulating financial management (occupations) and tactical risk (monster fights) that rewards you with an official digital certificate.
 #### Bane: Completely text based.
 
+### - **AdvanceStonePaperScissor_game.py** → Computer will learn from you past moves and will predict the next move. This concept uses Markov-chain style prediction to predict the next move 🎮✊📄✂️🧠
+#### Boon: Uses Markov-chain style prediction to predict the next move and keeps learning on every move.
+#### Bane: If user tries to randomise his/her moves by not following a particular pattern, the advantage of computer can disappear.
+
 ---
 
 ## 🚀 How to Run
